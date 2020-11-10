@@ -1,0 +1,130 @@
+html {
+    height: 200%;
+    overflow: scroll;
+}
+
+nav {
+    display: none;
+}
+#nav-title {
+    display: none;
+}
+
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    background-color: #abcbd9;
+    overflow: hidden;
+    list-style-type: none;
+    width: 100%;
+    z-index: 1;
+}
+li {
+    float: left;
+}
+li a {
+    color: #ffffff;
+    filter: brightness(97%);
+    display: block;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+
+}
+li a:hover {
+    background-color: #667982;
+    filter: brightness(180%);
+    font-weight: 500;
+}
+
+#body {
+    padding: 0;
+    margin-top: 10%;
+    column-count: 3;
+    column-rule: 1px solid #ccc;
+    column-gap: 10px;
+    position: relative;
+    display: inline-block;
+}
+
+p {
+    height: 250px;
+    width: 100%;
+    font-size: 22px;
+    display: inline-block;
+    text-indent: 10px;
+}
+p:first-child {
+    display: inline-block;
+}
+p:last-child {
+    display: none;
+}
+p:hover::after {
+    content: 'Dont Stress...';
+    display: inline-block;
+    position: relative;
+    background-color: #abcbd9;
+    font-size: 40px;
+    font-style: italic;
+    margin: 20% 25%;
+    color: white;
+}
+p:hover {
+    background-color: #abcbd9;
+    text-indent: 10px;
+    font-weight: 400;
+}
+
+
+blockquote {
+    margin-top: 10%;
+    column-span: all;
+    text-align: center;
+    font-size: 25px;
+    opacity: 60%;
+    border: 2px #ccc solid;
+    padding: 30px;
+}
+blockquote:hover {
+    background-color: #abcbd9;
+    filter: drop-shadow(120%);
+    filter: brightness(200%);
+    opacity: 100%;
+    border: 2px solid black;
+}
+
+blockquote:hover em {
+    color: #55656c;
+    font-weight: bold;
+}
+
+.row {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    margin-top: 10%;
+    column-count: 3;
+    column-gap: 40px;
+    border: 2px #ccc solid;
+    background-color: #ccc;
+    color: #f2f2f2;
+    left: 0;
+    letter-spacing: 2px;
+}
+.full-col {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    column-span: all;
+    text-align: center;
+    margin: 25px;
+    font-size: 20px;
+    left: 0;
+    color: black;
+    word-spacing: 20px;
+    display: none;
+}
